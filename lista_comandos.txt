@@ -1,0 +1,18 @@
+git config --global user.name "Fabrício Domingos"
+git config --global user.email "fabriciodomingos01@gmail.com"
+
+mkdir residencia_ifrn
+cd mkdir residencia_ifrn
+
+touch aluno.txt
+echo "Nome: Fabrício Domingos da Silva" >> aluno.txt
+echo "Matrícula: 20251ZL00130084" >> aluno.txt
+
+gh repo create curso-git-embarcatech --public --source=. --remote=origin
+
+git init
+git add .
+git commit -m "Primeiro commit"
+git branch -M main 
+git remote add origin https://github.com/fabricioddsv/curso-git-embarcatech.git
+git push -u origin main
